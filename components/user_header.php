@@ -23,6 +23,7 @@ if(isset($message)){
          <a href="menu.php">Menú</a>
          <a href="orders.php">Pedidos</a>
          <a href="contact.php">Contacto</a>
+         <a href="upload.php"> Cargar Imagen<a>
       </nav>
 
       <div class="icons">
