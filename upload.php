@@ -25,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['file'])) {
             $result = $s3->putObject([
                 'Bucket' => $bucket,
                 'Key'    => $fileName,
-                'SourceFile' => $uploadPath,
-                'ACL'    => 'public-read', // Hacer que el archivo sea accesible públicamente
+                'SourceFile' => $uploadPath, 
             ]);
 
             echo "Archivo subido correctamente. URL: " . $result['ObjectURL'];
